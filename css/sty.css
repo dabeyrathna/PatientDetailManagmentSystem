@@ -1,0 +1,382 @@
+/*######## Wrapper ########*/
+ /*
+
+
+.grid_reg   {display:inline; float:left; position:relative; margin-left:20px; margin-right:20px;}
+        {list-style:none; margin:0 0 30px 0; padding:0;}
+	    {margin:0 0 0 0; padding:0;}
+		{width:295px;display:inline-block; padding:10px 0 10px 5px; border-bottom:1px solid #e4e4e4; text-decoration:none; color:#393939; }
+	    {-moz-border-radius-bottomleft:5px; -moz-border-radius-bottomright:5px;  -webkit-border-bottom-left-radius:5px;  -webkit-border-bottom-right-radius:5px;}
+		{-moz-border-radius-topleft:5px; -moz-border-radius-topright:5px;  -webkit-border-top-left-radius:5px;  -webkit-border-top-right-radius:5px;}
+		{width:280px; background:#f6f6f6; padding:10px 0 10px 20px;}
+	
+.hr	       {border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #d6d6d6; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;}
+	*/
+	
+body	{background-color:  #66CC33; }
+
+/*:url(../images/bg1.png) repeat-x ;}	*/
+	
+#header {
+	height: 45px;
+	position: relative;
+	background: #339933 ; /*url(../images/footer.png) repeat-x top left*/
+	background: -webkit-radial-gradient(left, #006600 , #336600,#33CC00 ); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(left, #006600 , #336600,#33CC00 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(left, #006600 , #336600,#33CC00 ); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(to left, #006600  , #336600 ,#33CC00); /* Standard syntax (must be last) */
+	padding: 45px;
+	
+	color: #FFFFFF;
+	/* font-size:500pt; */
+	width: 888px;
+	border: solid 1px #99FF00; 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;
+	/*background-image: url(images/ehealth.png);*/
+}
+
+#wrapper {
+	position: relative;
+	width: 980px;
+	height:auto;
+	margin: 0 auto; 
+	background:#66CC33;
+	border: solid 5px #99FF00; 
+	border-radius: 20px;
+	box-shadow: 0px 5px 20px 2px rgba(0,0,0,0.1);
+	    background: -webkit-linear-gradient(left, #339933  , #66CC33 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #339933 , #66CC33 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #339933 , #66CC33 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #339933  , #66CC33 ); /* Standard syntax (must be last) */
+}
+
+br.clearfix {
+	clear: both;
+}
+
+#page {
+	position: relative;
+	width: 890px;
+	
+	/* padding-top: 45px; */
+	padding-right: 45px;
+	padding-bottom: 15px;
+	padding-left: 45px;
+	background:#66CC33;
+	background: -webkit-linear-gradient(left, #339933  , #66CC33 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #339933 , #66CC33 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #339933 , #66CC33 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #339933  , #66CC33 ); /* Standard syntax (must be last) */
+}
+
+/*######## Footer ########*/
+
+#footer {
+	padding: 0 45px 0 45px;
+/* 	position: relative; */
+	background: #006600; /* url(../images/footer.png) repeat-x top left;*/
+	margin: 0;
+	height: 60px;
+	width: 890px;
+	border-top: solid 1px #000;
+	border-bottom: solid 1px #000;
+	text-shadow: 0 1px 1px #007D7D;
+}
+
+/*######## Forms ########*/
+.hospital_form {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 600px;
+    background: #66CC33;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.hospital_form h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #006600;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+
+}
+.hospital_form h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.hospital_form label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.hospital_form label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.hospital_form input[type="text"], .hospital_form input[type="email"],  .hospital_form input[type="password"], .hospital_form textarea, .hospital_form select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.hospital_form textarea{
+    height:100px;
+    padding-top: 10px;
+}
+.hospital_form select {
+    background: -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width:100%;
+    height:30px;
+}
+
+.hospital_form .button {
+    background-color: #006600;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+
+.hospital_form .button:hover {
+    background-color:#80A24A;
+}
+
+#content_wrapper{
+	margin-left:auto;
+    margin-right:auto;
+
+    max-width: 890px;
+   
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+/**********Slider***********/
+
+#sidebar {
+	width: 700px;
+	padding: 0;
+	margin: 0 0 0 210px;
+	height:700px;
+	
+}
+
+
+#slider {
+	position: relative;
+	margin: 45px 45px 0px 45px;
+	width: 890px;
+	
+}
+
+#slider .viewer {
+	width: 890px;
+	height: 250px;
+	/* border: solid 1px #D4D4D4; */
+	border-radius: 3px;
+	box-shadow: 10px 10px 5px #003300;
+}
+
+#slider .slide {
+	width: 890px;
+	height: 250px;
+	padding: 10px;
+}
+
+#slider .indicator {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+#slider .indicator span {
+	display: inline-block;
+	text-indent: -9999em;
+	width: 12px;
+	height: 12px;
+	background: #E3DFDF;
+	border-radius: 6px;
+	margin: 0 2px 0 2px;
+}
+
+#slider .indicator span.active {
+	background: #6E6E6E;
+}
+
+/* Buttons */
+
+.button-link {
+	text-decoration: none;
+    padding: 10px 15px;
+    background: #006600;
+    color: #FFF;-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.button-link:hover, .button-link:focus {
+    background: #999900;
+    border: solid 1px #2A4E77;
+    text-decoration: none;   
+	color: #000000;-webkit-border-radius: 4px;
+	-webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.button-link1 {
+	text-decoration: none;
+    padding: 5px 5px;
+    background: #006600;
+    color: #FFF;-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-link1:hover {
+    background: #999900;
+    border: solid 1px #2A4E77;
+    text-decoration: none;   
+	color: #000000;-webkit-border-radius: 4px;
+	-webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.button-link2 {
+	width:30px;
+	height:20px;
+	text-decoration: none;
+    padding: 5px 5px;
+    background: #006600;
+    color: #FFF;-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-link2:hover {
+    background: #999900;
+    border: solid 1px #2A4E77;
+    text-decoration: none;   
+	color: #000000;-webkit-border-radius: 4px;
+	-webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+/* .myButton:{
+	 background:url(../Images/logo1.PNG) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+
+} */
+
+#button         {background-color: #006600;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-border-radius: 5px;
+				border: none;
+				padding: 10px 25px 10px 25px;
+				color: #FFF;
+				text-shadow: 1px 1px 1px #949494;}
+				
+.button:visited 			{background:#000000 url(../images/alert-overlay.png) repeat-x; 
+						display:inline-block; padding:5px 10px 6px; color:#fff; 
+						text-decoration:none;
+						-moz-border-radius:5px; 
+						-webkit-border-radius:5px; 
+						-moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); 
+						-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+						text-shadow:0 -1px 1px rgba(0,0,0,0.25); 
+						border-bottom:1px solid rgba(0,0,0,0.25); 
+						position:relative; cursor:pointer; font-size:13px; font-weight:bold; line-height:1; border:0;}
+.button:hover			{background-color:#80A24A;}
+.button:active			{top:1px;}
+
+
+#set1 { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 5px groove (internal value);
+	width: 80%;
+	border-radius: 25px;
+}
+#details
+{
+
+border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 20px; 
+    width: 40%;
+    
+}
+
+h1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	color: black;
+	text-align: left;
+}

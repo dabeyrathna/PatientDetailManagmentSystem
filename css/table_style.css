@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+#table
+{
+ background-color:#99FF00 rgba(0,0,0,0.5);
+ 
+  
+
+}
+
+
+#commonTable th{
+	height:30px;
+	text-align:left;
+	padding-left:10px;
+	padding-right:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+	font-weight:normal;
+}
+
+#commonTable td{
+	height:25px;
+	padding-left:3px;
+	padding-right:3px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+
+.blueTbl td{
+	background:#eaf1f8;
+	color: #03F;
+}
+
+.greenTbl th{ 
+	background:url(../images/header_green.png) 0 0 repeat-x;	
+}
+
+.greenTbl td{ 
+	background:#ddf2c3;
+}
+
+
+.orangeTbl td{ 
+	background:#fcf1c3;
+}
+
+.darkBlueTbl td{ 
+	/*background:#d7dce3; */
+	background:#f8f8f8;
+}
+
+
+.redTbl td{ 
+	background:#FFF8F8;
+}
+
+.purpleTbl td{ 
+	background:#fdd3ea;
+}
+div {
+	color: #000;
+}
+div {
+	font-size: 12pt;
+}
